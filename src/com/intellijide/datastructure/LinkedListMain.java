@@ -7,6 +7,7 @@ public class LinkedListMain {
         LinkedList linkedList1 = new LinkedList();
         LinkedList linkedList2 = new LinkedList();
         LinkedList linkedList3 = new LinkedList();
+        LinkedList linkedList4 = new LinkedList();
 
         linkedList1.push(70);
         linkedList1.push(30);
@@ -50,5 +51,15 @@ public class LinkedListMain {
             System.out.println("Element not Inserted");
 
         linkedList1.print();
+
+        linkedList4.add(56);
+        linkedList4.add(30);
+        linkedList4.add(40);
+        linkedList4.add(70);
+        linkedList4.print();
+
+        linkedList4.deleteNode(2);
+        linkedList4.print();
+        System.out.println("Size of Linkedlist -> " +linkedList4.countNodes());
     }
 }

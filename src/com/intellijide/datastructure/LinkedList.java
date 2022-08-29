@@ -62,6 +62,25 @@ public class LinkedList<E> {
             temp.setNext(null);
             temp = tail;
     }
+    void deleteNode(int index){
+        Node<E> temp = head;
+        for(int i = 0; i < index - 1; i++){
+            temp = temp.getNext();
+            temp.next = temp.next.next;
+        }
+    }
+    public int countNodes() {
+        int count = 0;
+        //Node current will point to head
+        Node current = head;
+
+        while(current != null) {
+            //Increment the count by 1 for each node
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
     public void print(){
         Node<E> temp = head;
         while(temp != null){
