@@ -1,14 +1,10 @@
 package com.intellijide.datastructure;
 
-import java.util.LinkedList;
-
 public class LinkedListMain {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(56);
-        linkedList.add(30);
-        linkedList.add(70);
+        LinkedList linkedList1 = new LinkedList();
 
-        System.out.println(linkedList);
+        linkedList1.push(70);
+        linkedList1.print();
     }
 }
