@@ -1,5 +1,7 @@
 package com.intellijide.datastructure;
 
+import java.security.spec.RSAOtherPrimeInfo;
+
 public class LinkedListMain {
     public static void main(String[] args) {
         LinkedList linkedList1 = new LinkedList();
@@ -34,5 +36,11 @@ public class LinkedListMain {
         linkedList2.print();
         linkedList2.popLast();
         linkedList2.print();
+
+        if(linkedList1.search(30) != null){
+            System.out.println("Linked list 1 contain node you want to find");
+        }else {
+            System.out.println("Linked list 1 do not contain node you want to find");
+        }
     }
 }
