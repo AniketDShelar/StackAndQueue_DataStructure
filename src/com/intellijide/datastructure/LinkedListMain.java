@@ -42,5 +42,13 @@ public class LinkedListMain {
         }else {
             System.out.println("Linked list 1 do not contain node you want to find");
         }
+
+        boolean nodeInserted = linkedList1.insertAfter(30,40);
+        if(nodeInserted)
+            System.out.println("Data Inserted Successfully");
+        else
+            System.out.println("Element not Inserted");
+
+        linkedList1.print();
     }
 }
