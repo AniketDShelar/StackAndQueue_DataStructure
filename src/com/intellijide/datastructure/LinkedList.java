@@ -23,6 +23,25 @@ public class LinkedList<E> {
             tail = newNode;
         }
     }
+    public Node<E> search(E searchData){
+        Node<E> temp = head;
+        while(temp != null){
+            if(temp.getKey().equals(searchData))
+                return temp;
+                temp = temp.getNext();
+        }
+        return null;
+    }
+    public boolean insertAfter(E searchData, E insertData){
+        Node<E> newNode = new Node<>(insertData);
+        Node<E> searchNode = search(searchData);
+        if(searchData != null){
+            searchNode.setNext(newNode);
+            newNode.setNext(tail);
+            return true;
+        }
+        return false;
+    }
     public void print(){
         Node<E> temp = head;
         while(temp != null){
