@@ -13,6 +13,16 @@ public class LinkedList<E> {
             head = newNode;
         }
     }
+    public void add(E key){
+        Node<E> newNode = new Node<>(key);
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        }else{
+            tail.setNext(newNode);
+            tail = newNode;
+        }
+    }
     public void print(){
         Node<E> temp = head;
         while(temp != null){
