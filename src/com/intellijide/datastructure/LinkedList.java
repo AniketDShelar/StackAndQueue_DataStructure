@@ -48,6 +48,20 @@ public class LinkedList<E> {
         else
             head = head.getNext();
     }
+    public void popLast(){
+        Node<E> temp = head;
+        E popData = tail.getKey();
+        if(head == null) {
+            System.out.println("Linked list is empty");
+            return;
+        }else {
+            while (temp.getNext() != tail) {
+                temp = temp.getNext();
+            }
+        }
+            temp.setNext(null);
+            temp = tail;
+    }
     public void print(){
         Node<E> temp = head;
         while(temp != null){

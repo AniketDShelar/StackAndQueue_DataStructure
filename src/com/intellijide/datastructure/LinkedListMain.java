@@ -30,5 +30,9 @@ public class LinkedListMain {
 
         linkedList3.popFirst();
         linkedList3.print();
+
+        linkedList2.print();
+        linkedList2.popLast();
+        linkedList2.print();
     }
 }
