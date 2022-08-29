@@ -27,5 +27,8 @@ public class LinkedListMain {
             System.out.println("Element not Inserted");
 
         linkedList3.print();
+
+        linkedList3.popFirst();
+        linkedList3.print();
     }
 }
