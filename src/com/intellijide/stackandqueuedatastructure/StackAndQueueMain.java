@@ -19,6 +19,7 @@ public class StackAndQueueMain {
         stackList2.queue(70);
         stackList2.printQueue();
 
-
+        stackList2.dequeue();
+        stackList2.printQueue();
     }
 }
