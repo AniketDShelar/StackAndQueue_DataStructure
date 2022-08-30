@@ -8,5 +8,9 @@ public class StackAndQueueMain {
         stackList1.push(30);
         stackList1.push(56);
         stackList1.print();
+
+        stackList1.peek();
+        stackList1.pop();
+        stackList1.print();
     }
 }

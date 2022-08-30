@@ -13,7 +13,21 @@ public class StackAndQueue<E> {
             tail = newNode;
         }else{
             newNode.setNext(head);
-            head = newNode;
+
+        }
+        head = newNode;
+    }
+    public void peek(){
+        System.out.println(head.getKey());
+    }
+    public void pop(){
+        if(head == null){
+            System.out.println("Stack is Empty");
+        }else{
+            while(head != null) {
+                head = head.getNext();
+            }
+            System.out.println("Now Stack is Empty completely");
         }
     }
     public void print(){
