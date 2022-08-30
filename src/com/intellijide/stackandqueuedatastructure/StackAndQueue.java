@@ -39,6 +39,12 @@ public class StackAndQueue<E> {
             tail = newNode;
         }
     }
+    public void dequeue(){
+        if(head == null)
+            System.out.println("Linked list is empty");
+        else
+            head = head.getNext();
+    }
     public void printStack(){
         Node<E> temp = head;
         while(temp != null){
