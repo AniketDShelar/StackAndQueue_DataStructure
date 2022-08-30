@@ -13,12 +13,11 @@ public class StackAndQueue<E> {
             tail = newNode;
         }else{
             newNode.setNext(head);
-
+            head = newNode;
         }
-        head = newNode;
     }
     public void peek(){
-        System.out.println(head.getKey());
+        System.out.println("Top most element -> " +head.getKey());
     }
     public void pop(){
         if(head == null){
@@ -30,7 +29,25 @@ public class StackAndQueue<E> {
             System.out.println("Now Stack is Empty completely");
         }
     }
-    public void print(){
+    public void queue(E key){
+        Node<E> newNode = new Node<>(key);
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        }else{
+            tail.setNext(newNode);
+            tail = newNode;
+        }
+    }
+    public void printStack(){
+        Node<E> temp = head;
+        while(temp != null){
+            System.out.println(temp.getKey() +" ");
+            temp = temp.getNext();
+        }
+        System.out.println();
+    }
+    public void printQueue(){
         Node<E> temp = head;
         while(temp != null){
             System.out.print(temp.getKey() +" ");
