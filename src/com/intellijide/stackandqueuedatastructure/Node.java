@@ -1,11 +1,14 @@
-package com.intellijide.datastructure;
+package com.intellijide.stackandqueuedatastructure;
 
 public class Node<K> {
     K key;
     Node<K> next;
+
     public Node(K key) {
         this.key = key;
+        this.next = next;
     }
+
     public K getKey() {
         return key;
     }

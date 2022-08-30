@@ -1,6 +1,4 @@
-package com.intellijide.datastructure;
-
-import java.security.spec.RSAOtherPrimeInfo;
+package com.intellijide.linkedlistdatastructure;
 
 public class LinkedListMain {
     public static void main(String[] args) {

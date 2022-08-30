@@ -1,4 +1,4 @@
-package com.intellijide.datastructure;
+package com.intellijide.linkedlistdatastructure;
 
 public class LinkedList<E> {
     Node<E> head;
@@ -71,13 +71,13 @@ public class LinkedList<E> {
     }
     public int countNodes() {
         int count = 0;
-        //Node current will point to head
-        Node current = head;
+        //Node temp will point to head
+        Node temp = head;
 
-        while(current != null) {
+        while(temp != null) {
             //Increment the count by 1 for each node
             count++;
-            current = current.next;
+            temp = temp.next;
         }
         return count;
     }
